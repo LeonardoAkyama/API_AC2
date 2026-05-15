@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Projetos</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<h1>Controle de Projetos</h1>
+
+
+<section>
+    <h2>Cadastrar Setor</h2>
+
+    <input type="text" id="nomeSetor" placeholder="Nome do setor">
+    <button onclick="cadastrarSetor()">Cadastrar</button>
+</section>
+
+<section>
+    <h2>Consultar Setores</h2>
+
+    <button onclick="listarSetores()">Listar Setores</button>
+
+    <div id="listaSetores"></div>
+</section>
+
+<section>
+    <h2>Cadastrar Funcionário</h2>
+
+    <input type="text" id="nomeFuncionario" placeholder="Nome do funcionário">
+
+    <input type="number" id="setorFuncionario" placeholder="ID do setor">
+
+    <button onclick="cadastrarFuncionario()">Cadastrar</button>
+</section>
+
+
+<section>
+    <h2>Cadastrar Projeto</h2>
+
+    <input type="text" id="descricaoProjeto" placeholder="Descrição">
+
+    <label>Data Início</label>
+    <input type="date" id="dataInicio">
+
+    <label>Data Fim</label>
+    <input type="date" id="dataFim">
+
+    <button onclick="cadastrarProjeto()">Cadastrar</button>
+</section>
+
+<section>
+    <h2>Vincular Funcionário ao Projeto</h2>
+
+    <input type="number" id="projetoIdVinculo" placeholder="ID Projeto">
+
+    <input type="number" id="funcionarioIdVinculo" placeholder="ID Funcionário">
+
+    <button onclick="vincularFuncionario()">Vincular</button>
+</section>
+
+<section>
+    <h2>Buscar Projeto por ID</h2>
+
+    <input type="number" id="buscarProjetoId" placeholder="ID Projeto">
+
+    <button onclick="buscarProjeto()">Buscar</button>
+
+    <div id="resultadoProjeto"></div>
+</section>
+
+
+<section>
+    <h2>Projetos por Funcionário</h2>
+
+    <input type="number" id="funcionarioBuscaProjetos" placeholder="ID Funcionário">
+
+    <button onclick="buscarProjetosFuncionario()">Buscar</button>
+
+    <div id="resultadoFuncionarioProjetos"></div>
+</section>
+
+<script src="JS/script.js"></script>
+
+</body>
+</html>
